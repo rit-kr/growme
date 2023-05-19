@@ -8,9 +8,17 @@ function App() {
     <div className="App">
       {
         localStorage.getItem("userInfo") ?
-          <User />
+          <>
+            <Routes>
+              <Route path="/*" element={<User />} />
+            </Routes>
+          </>
           :
-          <Login />
+          <>
+            <Routes>
+              <Route path="/*" element={<Login />} />
+            </Routes>
+          </>
       }
     </div>
   );
