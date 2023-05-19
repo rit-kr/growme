@@ -1,4 +1,4 @@
-import './style.scss';
+import "../../utils/stylesheets/login.scss";
 import { Paper, Stack, TextField, Button } from "@mui/material"
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useState } from 'react';
