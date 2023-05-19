@@ -36,7 +36,6 @@ export default function Login() {
             localStorage.setItem("userInfo", JSON.stringify(form))
             navigate("/user");
             window.location.reload(true);
-            console.log("form", form);
         }
     }
     return (

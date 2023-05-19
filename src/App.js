@@ -11,16 +11,13 @@ function App() {
         localStorage.getItem("userInfo") ?
           <>
             <Routes>
-              <Route path='/user' element={<User />} />
-              <Route path='/department' element={<Department />} />
+              <Route exact path='/user' element={<User />} />
               <Route path='*' element={<User />} />
             </Routes>
           </>
           :
           <>
             <Routes>
-              <Route path='/login' element={<Login />} />
-              <Route path='/' element={<Login />} />
               <Route path='*' element={<Login />} />
             </Routes>
           </>
